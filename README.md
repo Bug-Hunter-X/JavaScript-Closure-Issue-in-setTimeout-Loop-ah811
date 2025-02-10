@@ -1,0 +1,3 @@
+# JavaScript Closure Issue in setTimeout Loop
+
+This repository demonstrates a common closure issue in JavaScript loops using `setTimeout`. The problem arises because the callback function within `setTimeout` does not capture the value of `i` at the time it's created, but rather references the variable itself. This means that by the time the `setTimeout` function eventually executes, the loop has already finished and `i` will be its final value (10).  The solution showcases how to use closures correctly to address this.
